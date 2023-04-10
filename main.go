@@ -40,7 +40,7 @@ func main() {
 	app := fiber.New()
 	//root route
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Home page")
+		return c.SendString("Home page \n GET data using /car ")
 	})
 
 	app.Get("/car", getCar)
